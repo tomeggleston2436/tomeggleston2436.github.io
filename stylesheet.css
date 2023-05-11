@@ -1,50 +1,121 @@
 body {
-    background: #FFFCEC;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  header {
-    position: relative;
-  }
-  
-  .name {
-    font-size: 5rem;
-    font-weight: 400;
-    line-height: 1.2;
-    color: #565656;
-    margin: auto;
-    text-align: center;
+  background: #FFFCEC;
+  font-family: 'Itim', sans-serif;
+}
 
-  }
-  
-  .name2 {
-    color: #f69322;
-  }
-  
-  .egg {
-    position: absolute;
-    top: 1rem;
-    
-    width: 171px;
-    height: 97px;
-  }
-  .navbar-nav .nav-link.active {
-    color: #f69322;
-  }
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 10rem;
-    background-color: #FFFCEC;
-  }
+header {
+  position: relative;
+  display: flex;
+  padding-bottom: 30px;
+}
 
-  h2{
-    text-align: center;
-  }
+.navbar {
+  background-color: #f69322;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
-  footer {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #777777;
-    background-color: #FFFCEC;
-  }
+}
+.nav-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar-nav {
+  flex-direction: column;
+  padding-left: 0;
+  display: flex; 
+  align-items: center;
+  
+}
+
+
+.navbar-nav .nav-link.active {
+  color: #f69322;
+  background-color: #ffffff;
+}
+.navbar-nav .nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-content {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #565656;
+}
+
+.name2 {
+  color: #f69322;
+}
+
+.egg {
+  position: absolute;
+  top: 1rem;
+  width: 171px;
+  height: 97px;
+}
+
+main {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  
+}
+
+.main-content {
+  padding: 0 1rem;
+}
+
+.container {
+  max-width: 800px;
+  background-color: #FFFCEC;
+  margin-top: 80px;
+  height: 200px;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("images/egg.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
