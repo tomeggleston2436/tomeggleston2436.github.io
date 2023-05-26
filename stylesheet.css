@@ -1,5 +1,6 @@
 body {
-  background: #FFFCEC;
+  
+  
   font-family: 'Itim', sans-serif;
 }
 
@@ -91,11 +92,12 @@ main {
 
 .main-content {
   padding: 0 1rem;
+  background-color: rgb(255, 252, 236);
 }
 
 .container {
   max-width: 800px;
-  background-color: #FFFCEC;
+  
   padding: 10px;
   
 }
@@ -136,7 +138,7 @@ footer p {
   background-image: url("images/egg.jpg");
 
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 450px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -144,3 +146,13 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.portfolio {
+
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+
